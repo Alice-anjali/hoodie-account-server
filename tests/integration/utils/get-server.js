@@ -19,7 +19,7 @@ function getServer (options, callback) {
     callback = options
     options = {}
   }
-  var server = new Hapi.Server({
+  var server = this.server = new Hapi.Server({
     // easy debug!
     // debug: {
     //   request: ['error'],
